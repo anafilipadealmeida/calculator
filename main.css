@@ -1,0 +1,57 @@
+html {
+  font-size: 16px;
+}
+
+h1 {
+  color: #0080FF;
+}
+
+button {
+  box-sizing: border-box;
+  border: 1px solid #0080FF;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.calc {
+  width: 400px;
+}
+
+.calc__row {
+  width: 100%;
+  font-size: 0;
+  height: 6.25rem;
+}
+
+.calc__display {
+  padding: 2.125rem 20px;
+  background-color: #0080FF;
+  color: #FFFFFF;
+  font-size: 2rem;
+  text-align: right;
+  margin: 0;
+}
+
+.calc__key {
+  width: 25%;
+  height: 100%;
+  color: #0080FF;
+  background-color: #FFFFFF;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.calc__key:focus {
+  outline: none;
+  color: #FFFFFF;
+  background-color: cornflowerblue;
+}
+
+.calc__key.calc__key--operator {
+  background-color: #9BCEFF;
+}
+
+.calc__key.calc__key--total {
+  width: 50%;
+  background-color: #FACC2E;
+}
