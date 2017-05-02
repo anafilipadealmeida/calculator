@@ -9,6 +9,10 @@ $(".calc__key").click(function() {
 	 	tmpOperator = newInput;
 		$(".calc__display").text("");
 	}
+	else if($(this).hasClass("calc__key--total")) {
+		$(".calc__display").text(tmpResult + parseInt(oldInput));
+	}
+
 	else {
 
 		if (oldInput === "0") {
